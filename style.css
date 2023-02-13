@@ -18,12 +18,29 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    margin: 1rem;
-    height: 50px;
     border-radius: 10px;
     z-index: 5;
-    background-color: rgb(26, 26, 26);
-    border: 1px solid rgb(63, 63, 63);
+    margin: 1rem;
+    background-color: #1b1b1b;
+    border: 1px solid rgb(64, 64, 64);
+    outline: 0;
+}
+.menu .btn{
+    border: 1px solid rgb(64, 64, 64);
+}
+
+.menu ul{
+    background-color: #1b1b1b;
+    border: 1px solid rgb(64, 64, 64);
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.dropdown-item:hover{
+    color: white;
+    background-color: #000000;
 }
 
 .menu:hover{
