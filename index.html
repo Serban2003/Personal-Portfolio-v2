@@ -1,23 +1,401 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome-->
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <title>Iustinian Serban</title>
+</head>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+<body>
+    <div class="page">
+        <header class="shadow">
+            <div class="background-image"></div>
 
+            <div class="container d-flex flex-wrap align-items-center justify-content-around text-white h-100"
+                style="z-index: 2;">
+                <div>
+                    <h1 class="text-uppercase">Hello there!<br>
+                        Welcome to my personal portfolio</h1>
+                    <div class="d-flex align-items-center gap-2">
+                        <h5>Iustinian Serban</h5>
+                        <i class="fa-solid fa-circle" style="font-size: 0.5rem;"></i>
+                        <h5>Student</h5>
+                        <i class="fa-solid fa-circle" style="font-size: 0.5rem;"></i>
+                        <h5>Technical University of Cluj-Napoca</h5>
+                    </div>
+                </div>
+
+                <img src="images/Untitled.png">
+            </div>
+        </header>
+        <div class="content">
+            <section id="about" class="d-flex flex-column align-items-end">
+                <div style="width: 50%" class="py-5 container text-dark">
+                    <h1 class="text-center">About me</h1>
+                    <p class="lead">
+                        My name is Iustinian and I am 20 years old.
+                        Currently, I am studying Automation and Computer Science at the Technical University of
+                        Cluj-Napoca. I am passionate about space, programming, and engineering.
+                        My dream is to create something useful, innovative, and significant for our society.
+                    </p>
+                </div>
+            </section>
+            <section id="skills" class="bg-dark">
+                <div class="py-5 container text-white">
+                    <h1 class="text-center">Skills</h1>
+                    <div class="d-flex flex-wrap justify-content-around gap-5">
+                        <div class="d-flex flex-column gap-3 flex-grow-1" style="max-width: 30rem; min-width: 18rem">
+                            <h2 class="text-center">Soft-skills</h2>
+                            <div>
+                                <h4>Programming</h4>
+                                <div class="progress shadow">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Teamwork</h4>
+                                <div class="progress shadow">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Communication</h4>
+                                <div class="progress shadow">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Adaptability</h4>
+                                <div class="progress shadow">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Creativity</h4>
+                                <div class="progress shadow">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column gap-3 flex-grow-1" style="max-width: 30rem; min-width: 18rem">
+                            <h2 class="text-center">Hard-skills</h2>
+                            <div>
+                                <h4>Web-Development</h4>
+                                <div class="progress shadow">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Java & C/C++</h4>
+                                <div class="progress shadow">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Communication</h4>
+                                <div class="progress shadow">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Android Development</h4>
+                                <div class="progress shadow">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <section id="experience">
+                <div class="py-5 container text-dark">
+                    <h1 class="text-center">Experience</h1>
+                    <div class="d-flex flex-wrap justify-content-around gap-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-ms-2 mt-3">
+                                <h3 class="text-center">Education</h3>
+                                <!-- Timeline Area-->
+                                <div class="apland-timeline-area">
+                                    <!-- Single Timeline Content-->
+                                    <div class="single-timeline-area">
+                                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s"
+                                            style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                            <p>2022-PRESENT</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="single-timeline-content d-flex wow fadeInLeft"
+                                                    data-wow-delay="0.3s"
+                                                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <div class="timeline-icon"><i
+                                                            class="fa-solid fa-building-columns"></i></div>
+                                                    <div class="timeline-text">
+                                                        <h6 class="fw-bold">Bachelor's Degree Student</h6>
+                                                        <p>1<sup>st</sup> year at The University of Cluj-Napoca in the
+                                                            Automation and Computer Science Faculty</p>
+                                                            <br>
+                                                            <i class="fa-solid fa-link"></i> <a
+                                                            href="https://www.utcluj.ro/en/">https://www.utcluj.ro/en/</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Single Timeline Content-->
+                                    <div class="single-timeline-area">
+                                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s"
+                                            style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                            <p>2021</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="single-timeline-content d-flex wow fadeInLeft"
+                                                    data-wow-delay="0.3s"
+                                                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <div class="timeline-icon"><i class="fa fa-briefcase"
+                                                            aria-hidden="true"></i></div>
+                                                    <div class="timeline-text">
+                                                        <h6 class="fw-bold">Erasmus+ Participant</h6>
+                                                        <p>In the 11<sup>th</sup> grade, I was selected to participate
+                                                            in the Erasmus+ KA1 REAL IT, 2020-1-RO01-
+                                                            KA102-078788 Project in Paphos, Cyprus. During the three
+                                                            weeks, I developed my
+                                                            professional skills in building e-commerce sites using
+                                                            WordPress, XAMPP, and
+                                                            WooCommerce. I studied elements of design and marketing, and
+                                                            I improved some
+                                                            personal skills, for example, teamwork, communication in
+                                                            English, and analysis of
+                                                            customer needs.</p>
+                                                            <br>
+                                                            <i class="fa-solid fa-link"></i> <a
+                                                            href="https://realit.europroiecte.eu/about/">https://realit.europroiecte.eu/about/</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Single Timeline Content-->
+                                    <div class="single-timeline-area">
+                                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s"
+                                            style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                            <p>2018-2021</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="single-timeline-content d-flex wow fadeInLeft"
+                                                    data-wow-delay="0.7s"
+                                                    style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                                    <div class="timeline-icon"><i class="fa-solid fa-school"></i></div>
+                                                    <div class="timeline-text">
+                                                        <h6 class="fw-bold">Student</h6>
+                                                        <p>At the "Costache Negri" Highschool</p>
+                                                        <br>
+                                                        <i class="fa-solid fa-link"></i> <a
+                                                            href="www.costachenegri.ro">www.costachenegri.ro</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-ms-2 mt-3">
+                                <h3 class="text-center">Education</h3>
+                                <!-- Timeline Area-->
+                                <div class="apland-timeline-area">
+                                    <!-- Single Timeline Content-->
+                                    <div class="single-timeline-area">
+                                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s"
+                                            style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                            <p>2022-PRESENT</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="single-timeline-content d-flex wow fadeInLeft"
+                                                    data-wow-delay="0.3s"
+                                                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <div class="timeline-icon"><i class="fa-solid fa-users"></i></div>
+                                                    <div class="timeline-text">
+                                                        <h6 class="fw-bold">Member of BEST Cluj-Napoca</h6>
+                                                        <p>The Board of European Students of Technology is a constantly
+                                                            growing non-profit and
+                                                            non-political organization.</p>
+                                                        <br>
+                                                        <i class="fa-solid fa-link"></i> <a
+                                                            href="https://bestcj.ro">https://bestcj.ro</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Single Timeline Content-->
+                                    <div class="single-timeline-area">
+                                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s"
+                                            style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                            <p>2022-PRESENT</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="single-timeline-content d-flex wow fadeInLeft"
+                                                    data-wow-delay="0.3s"
+                                                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <div class="timeline-icon"><i class="fa-solid fa-users"></i></div>
+                                                    <div class="timeline-text">
+                                                        <h6 class="fw-bold">Member of EUROAVIA Cluj-Napoca</h6>
+                                                        <p>EUROAVIA is an international student association with several
+                                                            Local Groups across
+                                                            Europe that spread and live the EUROAVIA spirit, a set of
+                                                            shared values based upon hard
+                                                            work, innovation, cultural awareness, teamwork, and
+                                                            international networking.</p>
+                                                        <br>
+                                                        <i class="fa-solid fa-link"></i> <a
+                                                            href="http://clujnapoca.euroavia.eu">http://clujnapoca.euroavia.eu</a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Single Timeline Content-->
+                                    <div class="single-timeline-area">
+                                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s"
+                                            style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                            <p>2022</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="single-timeline-content d-flex wow fadeInLeft"
+                                                    data-wow-delay="0.3s"
+                                                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                                    <div class="timeline-icon"><i class="fa-solid fa-users"></i></div>
+                                                    <div class="timeline-text">
+                                                        <h6 class="fw-bold">ROSPIN Academy Level 1</h6>
+                                                        <p>Romanian Space Initiative is a Non-Governmental Organisation
+                                                            that came to life thanks to unique and passionate people
+                                                            that converged towards one goal: developing the Romanian
+                                                            Space Ecosystem.</p>
+                                                        <br>
+                                                        <p>ROSPIN Academy covers everything from the basics of the space
+                                                            sector to the subsystem design of a satellite to the
+                                                            opportunity to be part of a hands-on mission design
+                                                            exercise. This educational programme is delivered with the
+                                                            support and involvement of local space companies and it
+                                                            brings together speakers from across Europe and the world.
+                                                        </p>
+                                                        <br>
+                                                        <i class="fa-solid fa-link"></i> <a
+                                                            href="https://rospin.org">https://rospin.org</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="bg-dark">
+                <div class="py-5 container text-white">
+                    <h1 class="text-center">My Projects</h1>
+                    
+
+                </div>
+
+            </section>
+            <section id="coontact">
+                <div class="py-5 container text-dark">
+                    <h1 class="text-center">Contact Me</h1>
+                    
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    </div>
+
+    </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with me on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="">
+                <a href="" class="me-4 link-secondary">
+                    <i class="fa fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fa fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Iustinian Serban</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
 
 <script src="script.js"></script>
+<script src="https://kit.fontawesome.com/7c4b48bdc6.js" crossorigin="anonymous"></script>
