@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Font Awesome-->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -15,13 +15,13 @@
 </head>
 
 <body>
-    <div class="menu dropdown text-white shadow">
+    <div class="menu dropdown text-blue shadow">
         <a class="btn text-white" style="font-size: 1.1rem" href="#" role="button" id="dropdownMenuLink"
             data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-bars me-2"></i>Menu
         </a>
 
-        <ul class="dropdown-menu shadow mt-2" style="font-size: 1.1rem" aria-labelledby="dropdownMenuLink">
+        <ul class="dropdown-menu text-blue shadow mt-2" style="font-size: 1.1rem" aria-labelledby="dropdownMenuLink">
             <li><a class="dropdown-item" href="#about">About Me</a></li>
             <li><a class="dropdown-item" href="#skills">Skills</a></li>
             <li><a class="dropdown-item" href="#experience">Experience</a></li>
@@ -32,18 +32,17 @@
 
 
     <div class="page">
-        <header class="shadow">
-            <div class="background-image"></div>
-
-            <div class="container d-flex align-items-center text-white h-100" style="z-index: 2;">
+        <header class="shadow bg-white">
+            <!-- <div class="background-image"></div> -->
+            <div class="container d-flex align-items-center h-100" style="z-index: 2;">
                 <div>
-                    <h1>Hello there!<br>
-                        Welcome to my personal portfolio</h1>
+                    <h1 style="font-size: 3rem">Hello there!<br>
+                        Welcome to my personal <span class="text-orange">portfolio</span></h1>
                     <div class="d-flex align-items-center gap-2">
                         <h5>Iustinian Serban</h5>
-                        <i class="fa-solid fa-circle" style="font-size: 0.5rem;"></i>
+                        <i class="fa-solid fa-circle text-orange" style="font-size: 0.5rem;"></i>
                         <h5>Student</h5>
-                        <i class="fa-solid fa-circle" style="font-size: 0.5rem;"></i>
+                        <i class="fa-solid fa-circle text-orange" style="font-size: 0.5rem;"></i>
                         <h5>Technical University of Cluj-Napoca</h5>
                     </div>
                 </div>
@@ -51,10 +50,10 @@
             </div>
         </header>
         <div class="content">
-            <section id="about" class="d-flex flex-column align-items-end">
-                <div style="width: 50%" class="py-5 container text-dark">
-                    <h1 class="text-center">About me</h1>
-                    <p class="lead">
+            <section id="about" class="d-flex flex-column align-items-end bg-blue">
+                <div style="width: 50%" class="py-5 container">
+                    <h1 class="text-uppercase text-gray-blue animate-y" style=" opacity: 0;">About me</h1>
+                    <p class="mt-4 animate-y" style="font-size: 2rem; opacity: 0;">
                         My name is Iustinian and I am 20 years old.
                         Currently, I am studying Automation and Computer Science at the Technical University of
                         Cluj-Napoca. I am passionate about space, programming, and engineering.
@@ -62,45 +61,45 @@
                     </p>
                 </div>
             </section>
-            <section id="skills" class="bg-dark">
-                <div class="py-5 container text-white">
-                    <h1 class="text-center">Skills</h1>
-                    <div class="d-flex flex-wrap justify-content-around gap-5">
+            <section id="skills" class="bg-white">
+                <div class="py-5 container">
+                    <h1 class="text-uppercase animate-y" style="opacity: 0;">Skills</h1>
+                    <div class="d-flex flex-wrap justify-content-around gap-5 mt-4">
                         <div class="d-flex flex-column gap-3 flex-grow-1" style="max-width: 30rem; min-width: 18rem">
-                            <h2 class="text-center">Soft-skills</h2>
+                            <h2 class="text-center" id="skills-title">Soft-skills</h2>
                             <div>
                                 <h4>Programming</h4>
                                 <div class="progress shadow">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                        aria-valuemax="100" style="width: 90%"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div>
                                 <h4>Teamwork</h4>
                                 <div class="progress shadow">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                        aria-valuemax="100" style="width: 75%"></div>
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div>
                                 <h4>Communication</h4>
                                 <div class="progress shadow">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                        aria-valuemax="100" style="width: 65%"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div>
                                 <h4>Adaptability</h4>
                                 <div class="progress shadow">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                        aria-valuemax="100" style="width: 95%"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div>
                                 <h4>Creativity</h4>
                                 <div class="progress shadow">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                        aria-valuemax="100" style="width: 85%"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
@@ -109,29 +108,29 @@
                             <div>
                                 <h4>Web-Development</h4>
                                 <div class="progress shadow">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                        aria-valuemax="100" style="width: 60%"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div>
                                 <h4>Java & C/C++</h4>
                                 <div class="progress shadow">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                        aria-valuemax="100" style="width: 80%"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div>
                                 <h4>Communication</h4>
                                 <div class="progress shadow">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                        aria-valuemax="100" style="width: 65%"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div>
                                 <h4>Android Development</h4>
                                 <div class="progress shadow">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                        aria-valuemax="100" style="width: 60%"></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
@@ -140,20 +139,20 @@
                 </div>
 
             </section>
-            <section id="experience">
-                <div class="py-5 container text-dark">
-                    <h1 class="text-center">Experience</h1>
-                    <div class="d-flex flex-wrap justify-content-lg-around justify-content-center gap-5 mt-5">
+            <section id="experience" class="bg-blue">
+                <div class="py-5 container">
+                    <h1 class="text-uppercase animate-y" style="opacity: 0;">Experience</h1>
+                    <div class="d-flex flex-wrap justify-content-lg-around justify-content-center gap-5 mt-4">
                         <!--Main Timeline-->
                         <div class="d-flex flex-column">
-                            <h2 class="text-center mb-4">Education</h2>
+                            <h2 class="text-center mb-4" style="opacity: 0;">Education</h2>
                             <!--Single Timeline-->
                             <div class="single-timeline d-flex align-items-center justify-content-end gap-4">
                                 <div class="timeline-date d-flex gap-4 align-items-center">
-                                    <p>2022-PRESENT</p>
+                                    <p  class="animate-y" style="opacity: 0;">2022-PRESENT</p>
                                     <div class="timeline-line"></div>
                                 </div>
-                                <div class="card shadow d-flex flex-row text-dark p-4 my-3">
+                                <div class="card shadow d-flex flex-row p-4 my-3 bg-white animate-y" style="opacity: 0;">
                                     <div class="timeline-icon"><i class="fa-solid fa-building-columns"></i>
                                     </div>
                                     <div class="timeline-text">
@@ -170,10 +169,10 @@
                             <!--Single Timeline-->
                             <div class="single-timeline d-flex align-items-center justify-content-end gap-4">
                                 <div class="timeline-date d-flex gap-4 align-items-center">
-                                    <p>2021</p>
+                                    <p  class="animate-y" style="opacity: 0;">2021</p>
                                     <div class="timeline-line"></div>
                                 </div>
-                                <div class="card shadow d-flex flex-row text-dark p-4 my-3">
+                                <div class="card shadow d-flex flex-row p-4 my-3 bg-white animate-y" style="opacity: 0;">
                                     <div class="timeline-icon"><i class="fa fa-briefcase"></i></div>
                                     <div class="timeline-text">
                                         <h6 class="fw-bold">Erasmus+ Participant</h6>
@@ -198,10 +197,10 @@
                             <!--Single Timeline-->
                             <div class="single-timeline d-flex align-items-center justify-content-end gap-4">
                                 <div class="timeline-date d-flex gap-4 align-items-center">
-                                    <p>2018-2021</p>
+                                    <p  class="animate-y" style="opacity: 0;">2018-2021</p>
                                     <div class="timeline-line"></div>
                                 </div>
-                                <div class="card shadow d-flex flex-row text-dark p-4 my-3">
+                                <div class="card shadow d-flex flex-row bg-white p-4 my-3 animate-y" style="opacity: 0;">
                                     <div class="timeline-icon"><i class="fa-solid fa-school"></i>
                                     </div>
                                     <div class="timeline-text">
@@ -221,55 +220,68 @@
                             <!--Single Timeline-->
                             <div class="single-timeline d-flex align-items-center justify-content-end gap-4">
                                 <div class="timeline-date d-flex gap-4 align-items-center">
-                                    <p>2022-PRESENT</p>
+                                    <p  class="animate-y" style="opacity: 0;">2022-PRESENT</p>
                                     <div class="timeline-line"></div>
                                 </div>
-                                <div class="card shadow d-flex flex-row text-dark p-4 my-3">
-                                    <div class="timeline-icon"><i class="fa-solid fa-users"></i>
+                                <div class="d-flex flex-column">
+                                    <div class="card shadow d-flex flex-row bg-white p-4 my-3 animate-y" style="opacity: 0;">
+                                        <div class="timeline-icon"><i class="fa-solid fa-users"></i>
+                                        </div>
+                                        <div class="timeline-text">
+                                            <h6 class="fw-bold">Member of BEST Cluj-Napoca</h6>
+                                            <h6 class="timeline-date-inside">2022-PRESENT</h6>
+                                            <p>The Board of European Students of Technology is a constantly
+                                                growing non-profit and
+                                                non-political organization.</p>
+                                            <br>
+                                            <i class="fa-solid fa-link"></i> <a
+                                                href="https://bestcj.ro">https://bestcj.ro</a>
+                                        </div>
                                     </div>
-                                    <div class="timeline-text">
-                                        <h6 class="fw-bold">Member of BEST Cluj-Napoca</h6>
-                                        <h6 class="timeline-date-inside">2022-PRESENT</h6>
-                                        <p>The Board of European Students of Technology is a constantly
-                                            growing non-profit and
-                                            non-political organization.</p>
-                                        <br>
-                                        <i class="fa-solid fa-link"></i> <a
-                                            href="https://bestcj.ro">https://bestcj.ro</a>
+                                    <div class="card shadow d-flex flex-row bg-white p-4 my-3 animate-y" style="opacity: 0;">
+                                        <div class="timeline-icon"><i class="fa-solid fa-users"></i>
+                                        </div>
+                                        <div class="timeline-text">
+                                            <h6 class="fw-bold">Member of EUROAVIA Cluj-Napoca</h6>
+                                            <h6 class="timeline-date-inside">2022-PRESENT</h6>
+                                            <p>EUROAVIA is an international student association with several
+                                                Local Groups across
+                                                Europe that spread and live the EUROAVIA spirit, a set of
+                                                shared values based upon hard
+                                                work, innovation, cultural awareness, teamwork, and
+                                                international networking.</p>
+                                            <br>
+                                            <i class="fa-solid fa-link"></i> <a
+                                                href="http://clujnapoca.euroavia.eu">http://clujnapoca.euroavia.eu</a>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow d-flex flex-row bg-white p-4 my-3 animate-y" style="opacity: 0;">
+                                        <div class="timeline-icon"><i class="fa-solid fa-users"></i>
+                                        </div>
+                                        <div class="timeline-text">
+                                            <h6 class="fw-bold">ROSPIN Ambasador</h6>
+                                            <h6 class="timeline-date-inside">2022-PRESENT</h6>
+                                            <p>EUROAVIA is an international student association with several
+                                                Local Groups across
+                                                Europe that spread and live the EUROAVIA spirit, a set of
+                                                shared values based upon hard
+                                                work, innovation, cultural awareness, teamwork, and
+                                                international networking.</p>
+                                            <br>
+                                            <i class="fa-solid fa-link"></i> <a
+                                                href="http://clujnapoca.euroavia.eu">http://clujnapoca.euroavia.eu</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                             <!--Single Timeline-->
                             <div class="single-timeline d-flex align-items-center justify-content-end gap-4">
                                 <div class="timeline-date d-flex gap-4 align-items-center">
-                                    <p>2022-PRESENT</p>
+                                    <p class="animate-y" style="opacity: 0;">2021</p>
                                     <div class="timeline-line"></div>
                                 </div>
-                                <div class="card shadow d-flex flex-row text-dark p-4 my-3">
-                                    <div class="timeline-icon"><i class="fa-solid fa-users"></i>
-                                    </div>
-                                    <div class="timeline-text">
-                                        <h6 class="fw-bold">Member of EUROAVIA Cluj-Napoca</h6>
-                                        <h6 class="timeline-date-inside">2022-PRESENT</h6>
-                                        <p>EUROAVIA is an international student association with several
-                                            Local Groups across
-                                            Europe that spread and live the EUROAVIA spirit, a set of
-                                            shared values based upon hard
-                                            work, innovation, cultural awareness, teamwork, and
-                                            international networking.</p>
-                                        <br>
-                                        <i class="fa-solid fa-link"></i> <a
-                                            href="http://clujnapoca.euroavia.eu">http://clujnapoca.euroavia.eu</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Single Timeline-->
-                            <div class="single-timeline d-flex align-items-center justify-content-end gap-4">
-                                <div class="timeline-date d-flex gap-4 align-items-center">
-                                    <p>2021</p>
-                                    <div class="timeline-line"></div>
-                                </div>
-                                <div class="card shadow d-flex flex-row text-dark p-4 my-3">
+                                <div class="card shadow d-flex flex-row bg-white p-4 my-3 animate-y" style="opacity: 0;">
                                     <div class="timeline-icon"><i class="fa-solid fa-rocket"></i>
                                     </div>
                                     <div class="timeline-text">
@@ -297,10 +309,111 @@
                     </div>
                 </div>
             </section>
-            <section id="projects" class="bg-dark">
-                <div class="py-5 container text-white">
-                    <h1 class="text-center">My Projects</h1>
+            <section id="projects" class="bg-blue">
+                <div class="py-5 container py-5">
+                    <h1 class="text-uppercase animate-y" style="opacity: 0;">My Projects</h1>
+                    <div class="d-flex flex-wrap justify-content-center gap-5 mt-5">
+                        <div class="card shadow p-4 gap-2 animate-x" style="opacity: 0;">
+                            <h4 id="title">EUROAVIA Cluj-Napoca Website</h4>
+                            <h6>2023-PRESENT</h6>
+                            <p> A site for EUROAVIA Cluj-Napoca.</p>
+                            <div class="progress">
+                                <div class="progress-bar html" role="progressbar" aria-label="HTML" style="width: 90%"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar css" role="progressbar" aria-label="CSS" style="width: 9%"
+                                    aria-valuenow="9" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar javascript" role="progressbar" aria-label="Javascript"
+                                    style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="d-flex flex-wrap gap-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="dot html me-2"></div>HTML
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="dot css me-2"></div>CSS
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="dot javascript me-2"></div>Javascript
+                                </div>
+                            </div>
+                            <a href="https://serban2003.github.io/Euroavia-Cluj-Napoca-site/home.html"
+                                class="stretched-link" target="_blank"></a>
+                        </div>
+                        <div class="card shadow p-4 gap-2 animate-x" style="opacity: 0;">
+                            <h4>Draze: A trip tracker app</h4>
+                            <h6>2022-PRESENT</h6>
+                            <p>An Android tracking app which records your car trip.</p>
+                            <div class="progress">
+                                <div class="progress-bar java" role="progressbar" aria-label="Java" style="width: 100%"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
 
+                            <div class="d-flex align-items-center">
+                                <div class="dot java me-2"></div>Java
+                            </div>
+                            <a href="https://github.com/Serban2003/Draze-A-Trip-Tracker-App" target="_blank"
+                                class="stretched-link"></a>
+                        </div>
+
+                        <div class="card  shadow p-4 gap-2 animate-x" style="opacity: 0;">
+                            <h4>RestAPI</h4>
+                            <h6>2020-PRESENT</h6>
+                            <p>A custom RESTful API using Spring and MySQL.</p>
+                            <div class="progress">
+                                <div class="progress-bprogressar java" role="progressbar" aria-label="Java"
+                                    style="width: 54%" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar javascript" role="progressbar" aria-label="Javascript"
+                                    style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar css" role="progressbar" aria-label="CSS" style="width: 6%"
+                                    aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar html" role="progressbar" aria-label="HTML" style="width: 3%"
+                                    aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="d-flex flex-wrap gap-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="dot java me-2"></div>Java
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="dot javascript me-2"></div>Javascript
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="dot css me-2"></div>CSS
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="dot html me-2"></div>HTML
+                                </div>
+                            </div>
+                            <a href="https://github.com/Serban2003/RestAPI" target="_blank" class="stretched-link"></a>
+                        </div>
+
+                        <div class="card  shadow p-4 gap-2 animate-x" style="opacity: 0;">
+                            <h4>CitroNet.com</h4>
+                            <h6>2021</h6>
+                            <p> A site made as an intermediary evaluation in the Erasmus Project: REAL IT
+                                2020-1-RO01-KA102-078788.</p>
+                            <div class="progress">
+                                <div class="progress-bar html" role="progressbar" aria-label="HTML" style="width: 65%"
+                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar css" role="progressbar" aria-label="CSS" style="width: 32%"
+                                    aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar javascript" role="progressbar" aria-label="Javascript"
+                                    style="width: 3%" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="d-flex flex-wrap gap-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="dot html me-2"></div>HTML
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="dot css me-2"></div>CSS
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="dot javascript me-2"></div>Javascript
+                                </div>
+                            </div>
+                            <a href="https://serban2003.github.io/CitroNet.com/index.html" target="_blank"
+                                class="stretched-link"></a>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -312,7 +425,7 @@
                             <div class="col-lg-6 col-ms-2">
                             </div>
                             <div class="col-lg-6 col-ms-2 d-flex flex-column justify-content-center">
-                                <h1 class="text-center">Contact Me</h1>
+                                <h1 class="text-uppercase animate-y" style="opacity: 0;">Contact Me</h1>
                                 <form class="contact-panel needs-validation card w-100 mt-4 p-5 shadow" novalidate>
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control text-white" id="nameInput"
@@ -345,44 +458,12 @@
                     </div>
                 </div>
             </section>
-            <section id="projects" class="bg-dark">
-                <div class="py-5 container text-white">
-                    <h1 class="text-center">Test</h1>
-                    <div class="d-flex gap-5">
-                        <!--Main Timeline-->
-                        <div class="d-flex flex-column">
-                            <!--Single Timeline-->
-                            <div class="single-timeline d-flex align-items-center justify-content-end gap-4">
-                                <div class="timeline-date d-flex gap-4 align-items-center">
-                                    <p>2020-PRESENT</p>
-                                    <div class="timeline-line"></div>
-                                </div>
-                                <div class="card shadow d-flex flex-row text-dark p-3 my-3" style="width: 480px;">
-                                    <div class="timeline-icon"><i class="fa-solid fa-building-columns"></i>
-                                    </div>
-                                    <div class="timeline-text">
-                                        <h6 class="fw-bold">Bachelor's Degree Student</h6>
-                                        <p>1<sup>st</sup> year at The University of Cluj-Napoca in the
-                                            Automation and Computer Science Faculty</p>
-                                        <br>
-                                        <i class="fa-solid fa-link"></i> <a
-                                            href="https://www.utcluj.ro/en/">https://www.utcluj.ro/en/</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </section>
         </div>
 
 
 
         <!-- Footer -->
-        <footer class="text-center text-lg-start bg-dark text-muted">
+        <footer class="text-center text-lg-start bg-blue text-muted">
             <!-- Section: Social media -->
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                 <!-- Left -->

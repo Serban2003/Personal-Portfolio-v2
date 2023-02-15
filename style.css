@@ -1,9 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Poppins&display=swap');
 
 :root{
-    --main-color: rgb(0, 13, 157);
-    --main-color-light: rgb(28, 46, 244);
+    /* --main-color: rgb(0, 13, 157);
+    --main-color-light: rgb(28, 46, 244); */
+--blue-dark: #050c43;
+--text-blue: #090e36;
+--white-blue: #f4f8ff;
+--gray-blue: #63688f;
+--text-gray-blue: #677caa;
+--gray: #acb2c6;
+--orange: #fe300b;
+--pink: #f08577;
+--red-dark: #5f020d;
+--red-light: #9f3a45;
+    
 }
+
+.text-blue{
+    color: var(--text-blue) !important;
+}
+
+.text-gray-blue{
+    color: var(--text-gray-blue) !important;
+}
+
+.text-orange{
+    color: var(--orange) !important;
+}
+
+.bg-white{
+    background-color: var(--white-blue) !important;
+    color: var(--text-blue) !important;
+}
+
+.bg-blue{
+    background-color: var(--blue-dark) !important;
+    color: white !important;
+}
+
+.bg-orange{
+    background-color: var(--orange) !important;
+}
+
+.bg-gray-blue{
+    background-color: var(--gray-blue) !important;
+    color: white !important;
+}
+
+.bg-blue-light{
+    background-color: #212967 !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -14,41 +61,45 @@ body {
     height: 100%;
 }
 
+section{
+    overflow-y: hidden;
+}
+
 .menu{
     position: fixed;
     top: 0;
     right: 0;
-    border-radius: 10px;
+    border-radius: 5px;
     z-index: 5;
     margin: 1rem;
-    background-color: #1b1b1b;
-    border: 1px solid rgb(64, 64, 64);
+    background-color: var(--orange);
+    border: none;
     outline: 0;
 }
 .menu .btn{
-    border: 1px solid rgb(64, 64, 64);
+    border: none;
 }
 
 .menu ul{
-    background-color: #1b1b1b;
-    border: 1px solid rgb(64, 64, 64);
+    background-color: var(--white-blue);
+    border: 1px solid var(--);
 }
 
 .dropdown-item{
-    color: white;
+    color: var(--text-blue);
 }
 
 .dropdown-item:hover{
-    color: white;
-    background-color: #000000;
+    color: var(--text-blue);
+    background-color: var(--gray);
 }
 
-.menu:hover{
-    background-color: rgb(42, 42, 42);
+.menu .btn:hover{
+    background-color: orangered;
 }
 
 .menu:focus{
-    box-shadow: 0px 0px 2px 2px var(--main-color);
+    box-shadow: 0px 0px 2px 2px var(--orange);
 }
 
 .page {
@@ -77,6 +128,11 @@ h1,
 h2,
 h3 {
     font-family: 'Roboto Slab', serif;
+    opacity: 0;
+}
+
+header h1{
+    opacity: 100;
 }
 
 .background-image {
@@ -102,29 +158,34 @@ h3 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #747474;
+    background: var(--text-blue);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #303030;
+    background: var(--orange);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: orangered;
 }
 
 .lead {
     color: #757575;
 }
 
-.progress-bar {
-    background-color: var(--main-color-light);
+#skills .progress {
+    background-color: var(--pink);
 }
 
-.progress {
-    background-color: #555;
+#skills .progress-bar{
+    background-color: var(--orange);
+    width: 0%;
+}
+
+#projects{
+    transition: all 0.3s;
 }
 
 /* Timeline */
@@ -137,7 +198,7 @@ h3 {
     width: 3px;
     height: 100%;
     content: "";
-    background-color: #ebebeb;
+    background-color: var(--gray-blue);
     top: 0;
     right: 0;
     z-index: 1;
@@ -148,7 +209,7 @@ h3 {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background-color: var(--main-color-light);
+    background-color: var(--orange);
     content: "";
     top: 50%;
     right: -4px;
@@ -170,7 +231,7 @@ h3 {
 .timeline-icon {
     width: 30px;
     height: 30px;
-    background-color: var(--main-color);
+    background-color: var(--orange);
     flex: 0 0 30px;
     text-align: center;
     max-width: 30px;
@@ -200,7 +261,7 @@ h3 {
 
 .single-timeline-content:hover .timeline-icon,
 .single-timeline-content:focus .timeline-icon {
-    background-color: var(--main-color-light);
+    background-color: var(--yellow);
 }
 
 .timeline-date-inside{
@@ -277,10 +338,66 @@ h3 {
 
 .contact-panel input:focus, .contact-panel textarea:focus{
     background-color: #10101074;
-    box-shadow: 0px 0px 2px 2px var(--main-color);
+    box-shadow: 0px 0px 2px 2px var(--orange);
     border: solid rgb(68, 68, 68) 1px;
 }
 
 .contact-panel textarea{
     max-height: 350px;
 }
+
+.dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.java{
+    background-color: var(--orange);
+}
+
+.javascript{
+    background-color: orange;
+}
+
+.html{
+    background-color: var(--blue-dark);
+}
+
+.css{
+    background-color: var(--text-gray-blue);
+}
+
+#projects .card{
+    max-width: 35rem !important;
+    flex-grow: 1;
+    position: relative;
+}
+
+#projects .card h4{
+    margin-bottom: -5px !important;
+}
+
+.come-x {
+    transform: translateX(150px);
+    animation: come-x 0.8s ease forwards;
+  }
+  .come-x:nth-child(odd) {
+    transform: translateX(-150px);
+    animation: come-x 0.8s ease forwards;
+  }
+  
+  @keyframes come-x {
+    to { transform: translateX(0);
+    opacity: 100%; }
+  }
+
+  .come-y {
+    transform: translateY(150px);
+    animation: come-y 0.8s ease forwards;
+  }
+
+  @keyframes come-y {
+    to { transform: translateY(0);
+    opacity: 100%; }
+  }
