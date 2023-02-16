@@ -92,7 +92,7 @@ $(window).scroll(function(event) {
     if (el.visible(true)) {
       el.addClass("come-x"); 
     } 
-    else el.removeClass("come-x");
+
   });
   
   $(".animate-y").each(function(i, el) {
@@ -100,7 +100,7 @@ $(window).scroll(function(event) {
     if (el.visible(true)) {
       el.addClass("come-y"); 
     } 
-    else el.removeClass("come-y");
+
   });
 
 });
