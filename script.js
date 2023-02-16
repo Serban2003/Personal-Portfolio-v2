@@ -21,17 +21,7 @@
 
 
 document.addEventListener("scroll", function(){
-  var elem = document.getElementById("projects");
-
-  if(isScrolledIntoView(elem) == true){
-    document.getElementById("projects").classList.remove("bg-blue");
-    document.getElementById("projects").classList.add("bg-white");
-  }
-  else{
-    document.getElementById("projects").classList.add("bg-blue");
-    document.getElementById("projects").classList.remove("bg-white");
-  }
-
+  
   var skillsSection = document.getElementById("skills-title");
   if(isScrolledIntoView(skillsSection) == true){
     $('.progress .progress-bar').css("width",

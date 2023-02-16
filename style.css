@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Poppins&display=swap');
 
 :root{
-    /* --main-color: rgb(0, 13, 157);
-    --main-color-light: rgb(28, 46, 244); */
 --blue-dark: #050c43;
 --text-blue: #090e36;
 --white-blue: #f4f8ff;
@@ -13,7 +11,6 @@
 --pink: #f08577;
 --red-dark: #5f020d;
 --red-light: #9f3a45;
-    
 }
 
 .text-blue{
@@ -182,6 +179,10 @@ header h1{
 #skills .progress-bar{
     background-color: var(--orange);
     width: 0%;
+}
+
+#experience .card{
+    position: relative;
 }
 
 #projects{
@@ -419,6 +420,7 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
   }
 
   #circle-container .logo{
@@ -472,3 +474,4 @@ header{
     top: calc(50%-300px);
     left: calc(50% + 300px);
   }
+

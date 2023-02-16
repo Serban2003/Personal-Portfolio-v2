@@ -176,7 +176,7 @@
             </section>
             <section id="experience" class="bg-blue">
                 <div class="py-5 container">
-                    <h1 class="text-uppercase animate-y" style="opacity: 0;">Experience</h1>
+                    <h1 class="text-uppercase text-gray-blue animate-y" style="opacity: 0;">Experience</h1>
                     <div class="d-flex flex-wrap justify-content-lg-around justify-content-center gap-5 mt-4">
                         <!--Main Timeline-->
                         <div class="d-flex flex-column">
@@ -196,10 +196,8 @@
                                         <h6 class="timeline-date-inside">2022-PRESENT</h6>
                                         <p>1<sup>st</sup> year at The University of Cluj-Napoca in the
                                             Automation and Computer Science Faculty</p>
-                                        <br>
-                                        <i class="fa-solid fa-link"></i> <a
-                                            href="https://www.utcluj.ro/en/">https://www.utcluj.ro/en/</a>
-                                    </div>
+                                    </div> 
+                                    <a href="https://www.utcluj.ro/en/" class="stretched-link"target="_blank"></a>
                                 </div>
                             </div>
                             <!--Single Timeline-->
@@ -225,10 +223,8 @@
                                             personal skills, for example, teamwork, communication in
                                             English, and analysis of
                                             customer needs.</p>
-                                        <br>
-                                        <i class="fa-solid fa-link"></i> <a
-                                            href="https://realit.europroiecte.eu/about/">https://realit.europroiecte.eu/about/</a>
                                     </div>
+                                    <a href="https://realit.europroiecte.eu/about/" class="stretched-link"target="_blank"></a>
                                 </div>
                             </div>
                             <!--Single Timeline-->
@@ -245,10 +241,8 @@
                                         <h6 class="fw-bold">Student</h6>
                                         <h6 class="timeline-date-inside">2018-2021</h6>
                                         <p>At the "Costache Negri" Highschool</p>
-                                        <br>
-                                        <i class="fa-solid fa-link"></i> <a
-                                            href="www.costachenegri.ro">www.costachenegri.ro</a>
                                     </div>
+                                    <a href="www.costachenegri.ro" class="stretched-link"target="_blank"></a>
                                 </div>
                             </div>
                         </div>
@@ -274,10 +268,8 @@
                                             <p>The Board of European Students of Technology is a constantly
                                                 growing non-profit and
                                                 non-political organization.</p>
-                                            <br>
-                                            <i class="fa-solid fa-link"></i> <a
-                                                href="https://bestcj.ro">https://bestcj.ro</a>
-                                        </div>
+                                            </div>
+                                        <a href="https://bestcj.ro" class="stretched-link"target="_blank"></a>
                                     </div>
                                     <div class="animate-x"></div>
                                     <div class="card shadow d-flex flex-row bg-white p-4 my-3 animate-x"
@@ -293,10 +285,8 @@
                                                 shared values based upon hard
                                                 work, innovation, cultural awareness, teamwork, and
                                                 international networking.</p>
-                                            <br>
-                                            <i class="fa-solid fa-link"></i> <a
-                                                href="http://clujnapoca.euroavia.eu">http://clujnapoca.euroavia.eu</a>
-                                        </div>
+                                         </div>
+                                        <a href="http://clujnapoca.euroavia.eu" class="stretched-link"target="_blank"></a>
                                     </div>
                                     <div class="animate-x"></div>
                                     <div class="card shadow d-flex flex-row bg-white p-4 my-3 animate-x"
@@ -312,10 +302,8 @@
                                                 shared values based upon hard
                                                 work, innovation, cultural awareness, teamwork, and
                                                 international networking.</p>
-                                            <br>
-                                            <i class="fa-solid fa-link"></i> <a
-                                                href="http://clujnapoca.euroavia.eu">http://clujnapoca.euroavia.eu</a>
-                                        </div>
+                                            </div>
+                                        <a href="http://clujnapoca.euroavia.eu" class="stretched-link"target="_blank"></a>
                                     </div>
                                 </div>
                             </div>
@@ -345,17 +333,15 @@
                                             support and involvement of local space companies and it
                                             brings together speakers from across Europe and the world.
                                         </p>
-                                        <br>
-                                        <i class="fa-solid fa-link"></i> <a
-                                            href="https://rospin.org">https://rospin.org</a>
                                     </div>
+                                    <a href="https://rospin.org" class="stretched-link"target="_blank"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="projects" class="bg-blue">
+            <section id="projects" class="bg-white">
                 <div class="py-5 container py-5">
                     <h1 class="text-uppercase animate-y" style="opacity: 0;">My Projects</h1>
                     <div class="d-flex flex-wrap justify-content-center gap-5 mt-5">
@@ -566,3 +552,36 @@
 
 <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/7c4b48bdc6.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+  el: "#projects",
+  mouseControls: false,
+  touchControls: false,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xcacb2c6,
+  backgroundColor: 0xcf4f8ff
+})
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+<script>
+VANTA.DOTS({
+  el: "#skills",
+  mouseControls: false,
+  touchControls: false,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xcacb2c6,
+  backgroundColor: 0xcf4f8ff,
+  showLines: false
+})
+</script>
